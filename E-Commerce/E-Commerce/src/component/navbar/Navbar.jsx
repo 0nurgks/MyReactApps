@@ -1,11 +1,15 @@
 import React from 'react'
 import NavbarLeft from './navbaritem/NavbarLeft'
 import NavbarRight from './navbaritem/NavbarRight'
+import "../../css/Navbar.css"
 
 export default function Navbar() {
-  return (<div className="flex items-center justify-between">  
-    <NavbarLeft/>
-    <NavbarRight/>
-          </div>
+  return (
+ <div>
+      <div className="container mx-auto flex items-center  justify-between p-4">
+        <NavbarLeft />
+        <NavbarRight />
+      </div>
+    </div>
   )
 }
